@@ -1,0 +1,113 @@
+# import matplotlib.pyplot as plt
+# import csv
+# import numpy as np
+
+# def read_csv(filename):
+#     """
+#     Lit un fichier CSV et extrait deux colonnes de données sous forme de listes.
+    
+#     :param filename: Le nom du fichier CSV à lire.
+#     :return: Deux listes de données flottantes.
+#     """
+#     with open(filename, 'r') as file:
+#         csv_reader = csv.reader(file)
+#         next(csv_reader)  # Ignorer l'en-tête
+#         summer_data = []
+#         correlated_data = []
+#         for row in csv_reader:
+#             summer_data.append(float(row[1]))
+#             correlated_data.append(float(row[2]))
+#         return summer_data, correlated_data
+
+# def calculate_correlation(x, y):
+#     """
+#     Calcule la corrélation entre deux ensembles de données.
+    
+#     :param x: Première liste de données.
+#     :param y: Deuxième liste de données.
+#     :return: Valeur de corrélation.
+#     """
+#     corr_matrix = np.corrcoef(x, y)
+#     correlation = corr_matrix[0, 1]
+#     return correlation
+
+# def plot_scatter(x, y):
+#     """
+#     Crée un graphique de dispersion à partir de deux ensembles de données.
+    
+#     :param x: Données pour l'axe des abscisses.
+#     :param y: Données pour l'axe des ordonnées.
+#     """
+#     plt.scatter(x, y)
+#     plt.xlabel('Summer Data')
+#     plt.ylabel('Highest Correlated Data')
+#     plt.title('Scatter Plot of Data Correlation')
+#     plt.grid(True)
+
+# # Utilisation des fonctions définies ci-dessus
+# if __name__ == "__main__":
+#     summer_data, highest_correlated_data = read_csv('c.csv')
+#     correlation_value = calculate_correlation(summer_data, highest_correlated_data)
+#     print(f'Highest correlation: {correlation_value}')
+#     plot_scatter(summer_data, highest_correlated_data)
+#     plt.show()
+
+
+import tkinter as tk 
+# def button_click():
+#     label.config(text='Bouton 2 clique')
+ 
+# fenetre = tki.Tk()
+# fenetre.title('Exemple de Side')
+ 
+# frame = tki.Frame(fenetre)
+# frame.pack()
+ 
+# button1 = tki.Button(frame, text='Bouton 1')
+# button1.pack(side=tki.LEFT)
+ 
+# button2 = tki.Button(frame, text='Button 2', command=button_click)
+# button2.pack(side=tki.LEFT)
+ 
+# fenetre.title('Hello Python')
+# fenetre.geometry('250x250')
+# label = tki.Label(fenetre, text="Bienvenue dans Tkinter")
+# label.pack()
+ 
+ 
+# fenetre.mainloop()
+
+
+
+# def button_click():
+#     print("Bouton Cliqué ! ")
+#     #Creation d'un Label
+#     label=tk.Label(window,text="Bouton Cliqué")
+#     label.pack(side=tk.TOP)  # Place le label en haut de la frame
+ 
+ 
+# #Creation de la fenetre
+# window=tk.Tk()
+# window.title('Hello Python')
+ 
+# #Creation d'un cadre
+# # Définition de la taille de la fenêtre
+# window.geometry("400x300")  # Définit la taille sur 400 pixels de largeur et 300 pixels de hauteur
+# frame=tk.Frame(window)
+# frame.pack()
+ 
+# #Creation d'un Label
+# label=tk.Label(window,text="Welcome")
+# label.pack(side=tk.TOP)  # Place le label en haut de la frame
+# #Creation de bouton et utilisation du parametre Side
+# button1=tk.Button(frame,text='Bouton 1')
+# button1.pack(side=tk.BOTTOM)
+# button2=tk.Button(frame,text='Bouton 2')
+# button2.pack(side=tk.BOTTOM)
+# button3=tk.Button(frame,text='Cliquez-moi',command=button_click)
+# button3.pack(side=tk.BOTTOM)
+ 
+# window.mainloop()
+ 
+
+

@@ -1,0 +1,11 @@
+{
+    "nom": "Mohammed Bazzou",
+    "age": 30,
+    "ville": "Paris",
+    "est_etudiant": false,
+    "Hobbies": [
+        "Sport",
+        "Music",
+        "Lecture"
+    ]
+}
